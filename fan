@@ -3,6 +3,10 @@
 PLATFORM=/sys/devices/platform
 ##cat $PLATFORM/PNP0C0B:0*/thermal_cooling/cur_state
 
+#
+# Following files need to get write access for
+# non root users !!
+#
 F0=$PLATFORM/PNP0C0B:00/thermal_cooling/cur_state
 F1=$PLATFORM/PNP0C0B:01/thermal_cooling/cur_state
 F2=$PLATFORM/PNP0C0B:02/thermal_cooling/cur_state
